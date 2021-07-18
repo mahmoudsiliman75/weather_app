@@ -1,0 +1,20 @@
+@mixin boxSizing {
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin borderRadius( $br ) {
+  -moz-border-radius: $br;
+  -o-border-radius: $br;
+  -webkit-border-radius: $br;
+  border-radius: $br;
+}
+
+@mixin  transitioning( $t ) {
+  -moz-transition: all $t ease-in-out;
+  -o-transition: all $t ease-in-out;
+  -webkit-transition: all $t ease-in-out;
+  transition: all $t ease-in-out;
+}

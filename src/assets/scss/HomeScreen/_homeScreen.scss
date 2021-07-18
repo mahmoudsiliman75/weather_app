@@ -1,0 +1,39 @@
+#app {
+  background-image: url("../media/backgrounds/cold_weather.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include transitioning(0.5s);
+
+  main {
+    min-height: 100vh;
+    padding: 25px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+
+    .search_box {
+      width: 50%;
+      margin: 0 auto;
+
+      #search_input {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        appearance: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        color: $dark_gray_color;
+        background-color: rgba(225, 225, 225, 0.5);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+        @include borderRadius(8px);
+        @include transitioning(0.5s);
+
+        &:focus {
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+          background-color: rgba(225, 225, 225, 0.75);
+        }
+      }
+    }
+  }
+}
